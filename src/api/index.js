@@ -3,9 +3,7 @@ import {filterData} from '../hooks/index';
 
 export const getData = async () => {
     try {
-        let response = await axios.get("https://api.npoint.io/97d89162575a9d816661");
-        console.log("response", response)
-        console.log("data", response.data)
+        let response = await axios.get(process.env.REACT_APP_BASE_URL_API);
         if(response.status === 200) {
             if(response.data.cuentas) {
                 return {
@@ -25,7 +23,6 @@ export const getData = async () => {
             }
         }
     } catch (error) {
-        console.log("error getData", error)
         return {
             status: false,
             mensaje: "Error Api"
