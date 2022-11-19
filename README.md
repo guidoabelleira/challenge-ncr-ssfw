@@ -12,3 +12,7 @@ Pasos a seguir
 
 ## 3 - Iniciar el proyecto, la app se ejecutara en puerto default http://localhost:3000/
 > **npm** start
+
+
+## **Test** 
+> **npm** run test
