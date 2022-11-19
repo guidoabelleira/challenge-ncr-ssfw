@@ -1,23 +1,18 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Home from './views/Home'
 import './App.css';
+import Detalle from './views/Detalle';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" index element={<Home/>}/>
+                <Route path="/detalle" element={<Detalle />}/>
+            </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;
