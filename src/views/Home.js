@@ -86,12 +86,13 @@ const Home = () => {
                                     Selecciona la Cuenta a Consultar
                                 </Typography>
                             </Box>
-                            <Box>
+                            <Box id="aca" sx={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
                                 <Stack 
                                     direction="row" 
                                     flexWrap="wrap"
                                     justifyContent="center"
                                     alignItems="center"
+                                    sx={{width: "100%"}}
                                 >
                                         {
                                             page !== 0 && (

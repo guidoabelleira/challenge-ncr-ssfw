@@ -1,4 +1,4 @@
-import { Box, AppBar, Toolbar} from '@mui/material'
+import { AppBar, Toolbar} from '@mui/material'
 import React from 'react'
 import Logo from '../assets/Logo'
 
